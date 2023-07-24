@@ -4,7 +4,7 @@ class Photo {
   final String thumbURL;
   final String originalURL;
 
-  // need to be unique value, used for Hero widget to animate between screens
+  // must be unique value (i.e ID), used for Hero widget to animate between screens
   final String heroTag;
 
   const Photo({

@@ -36,7 +36,7 @@ class _PhotoPageState extends State<PhotoPage> {
 
   void _savePhoto() {
     if (imageBytes == null) return;
-    ImageGallerySaver.saveImage(imageBytes!);
+    ImageGallerySaver.saveImage(imageBytes!, quality: 100);
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text("Saved!")),
     );

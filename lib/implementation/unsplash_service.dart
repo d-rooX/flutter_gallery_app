@@ -59,8 +59,9 @@ class UnsplashService implements PhotoService {
         .map((photo) => Photo(
               heroTag: photo['id'],
               originalURL: photo['urls']['raw'],
-              thumbURL: photo['urls']['thumb'],
+              thumbURL: photo['urls']['small'],
               author: photo['user']['name'],
+              likes: photo['likes'],
               name: photo['description'] ?? '',
             ))
         .toList(growable: false);

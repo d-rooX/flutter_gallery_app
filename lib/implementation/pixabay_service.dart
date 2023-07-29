@@ -36,6 +36,7 @@ class PixabayService implements PhotoService {
               author: photo['user'],
               thumbURL: photo['webformatURL'],
               originalURL: photo['largeImageURL'],
+              likes: photo['likes'],
               heroTag: photo['id'].toString(),
             ))
         .toList(growable: false);

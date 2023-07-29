@@ -66,6 +66,7 @@ class PexelsService implements PhotoService {
             author: photo['photographer'],
             originalURL: photo['src']['original'],
             thumbURL: photo['src']['medium'],
+            likes: null,
             heroTag: photo['id'].toString(),
           ),
         )

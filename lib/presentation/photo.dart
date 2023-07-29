@@ -32,12 +32,25 @@ class PhotoWidget extends StatelessWidget {
                   ),
                   const SizedBox(height: 5),
                 ],
-                Text(
-                  photo.author,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.w300,
-                    fontStyle: FontStyle.italic,
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      photo.author,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w300,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                    if (photo.likes != null)
+                    Text(
+                      "${photo.likes.toString()} ❤️",
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    )
+                  ],
                 ),
               ],
             ),

@@ -1,16 +1,10 @@
 # photo_gallery
 
-Photo gallery that aggregates different photo stock services
+Photo gallery that aggregates different photo stock services. Such as Pixabay, Pexels and Unsplash.  
+You can also search photos saving query between them, so it can be useful to compare services results.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+![Gallery view](readme_assets/gallery_1-min.png)  
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Search demonstration](readme_assets/gallery_2-min.png)
